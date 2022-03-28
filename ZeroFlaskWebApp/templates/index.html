@@ -51,7 +51,7 @@
             let text = await response.json(); // read response body as text
 
             if(typeof text.latin_name != 'undefined' || typeof text.county != 'undefined' || typeof text.population != 'undefined') {
-                document.getElementById("result").innerHTML = text.latin_name + "'s " + "zipcode is in " + text.county + " and has a population of " + text.population;
+                document.getElementById("result").innerHTML = text.latin_name + "'s " + "zip code is in " + text.county + " and has a population of " + text.population;
             } else {
                 document.getElementById("result").innerHTML = "Invalid Input!";
             }
