@@ -35,7 +35,7 @@ def build_response(name, zipcode):
 
     response_dict['latin_name'] = latin_name
     response_dict['county'] = county
-    response_dict['population'] = str(population)
+    response_dict['population'] = format(population,',')
     return response_dict
 
 
